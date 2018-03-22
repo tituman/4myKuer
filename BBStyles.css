@@ -1,0 +1,193 @@
+/* Basic */
+
+body {
+   width: auto;
+   max-width: 320px;
+   margin: 0 auto;
+   padding: 0;
+   color: #333;
+   background-color: #689;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+a {
+   text-decoration: none;
+}
+
+h1 {
+   margin: 0;
+   margin-bottom: 10px;
+   font-size: 1.25em;
+}
+
+noscript {
+   margin-top: 10px;
+   color: #f33;
+}
+
+* {
+   -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Container */
+
+#main {
+   margin-top: 0px;
+   padding: 25px;
+   background-color: #fff;
+   border-radius: 4px;
+}
+
+
+/* Canvas */
+
+#Canvas {
+   display: none;
+   position: absolute;
+   top: 11px;
+   right: 10px;
+   width: 16px;
+   height: 16px;
+}
+
+
+/* Form elements */
+
+form {
+   margin: 0;
+}
+
+fieldset {
+   position: relative;
+   margin: 0;
+   margin-top: 10px;
+   padding: 0;
+   border: none;
+}
+
+
+label {
+    float: left;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.middle {
+    vertical-align: top;
+    
+}
+/* Dropdown Lists*/
+select {
+    background-color: #fff;
+    border: solid 2px #00A300;
+    border-radius: 4px;    
+    box-sizing: border-box; 
+    width: 60%;
+    float:right;
+}
+#Process_ID, #SAP_Client_ID, #SAP_Segment_ID, #EffortField{
+    height: 30px;
+    margin: 0;
+}
+
+
+/* Aufwand toggle */
+
+#EffortField {
+   float: right;
+}
+
+input[type="radio"] {
+   display: none;
+}
+
+input[type="radio"] + label {
+   float: right;
+   width: 80px;
+   height: 16px;
+   margin: 0;
+   padding: 6px 0;
+   color: #999;
+   background-color: #ccc;
+   text-align: center;
+   border-bottom: solid 2px #999;
+   cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+   color: #000;
+}
+
+input[type="radio"]:checked + label {
+   color: #fff;
+   background-color: #00A300;
+   font-weight: bold;
+   border-bottom: solid 2px #023;
+}
+
+#EffortField label:first-of-type {
+   border-radius: 0 4px 4px 0;
+}
+
+#EffortField label:last-of-type {
+   border-radius: 4px 0 0 4px;
+}
+stickyMenu{
+    position: fixed;
+    z-index: 700;
+    border: none;
+    right: 0px;
+    
+}
+
+
+
+
+/* Field style for non-input elements */
+
+.Field {
+   height: 16px;
+   padding: 10px 5px;
+   font-size: 16px;
+   text-align: center;
+   border-radius: 4px;
+}
+
+
+/* Buttons */
+
+.Button:active {
+   margin-top: 2px !important;
+   border-bottom: 0 !important;
+}
+
+
+/* Bookmarklet view */
+
+/*
+@media only screen and (max-width: 800px) {
+*/
+   .body {
+      background-color: #fff;
+   }
+
+   .main {
+     margin: 0;
+     padding: 15px;
+     border-radius: 0;
+   }
+
+   .Output {
+     height: auto;
+   }
+/*
+}
+*/

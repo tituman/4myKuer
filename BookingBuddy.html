@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="BBStyles.css" inline="true">
+        <script src="./BookingBuddy.js"></script>
+
+        <title>Booking Buddy</title>
+
+    </head>
+
+	<body onload="AssignHTMLObjects()">
+
+		<div id="main">
+            <h1>
+				Booking Buddy
+<!-- 						<span id="Options" title="Toggle advanced options"></span>
+				<span id="SaveDefaults" class="Option" title="Save current advanced options as defaults"></span>
+  -->
+			</h1>
+			
+
+			<noscript>Requires JavaScript!</noscript>
+			<form>
+				<fieldset>
+                    <div id="SAP_Segment_ID" >
+                        <label>Segment: </label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <div id="SAP_Client_ID" >
+                    <label>Client: </label>                    
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <div id="Process_ID">Process: </div> 
+                </fieldset>
+        
+				<fieldset   onchange=updateAssignmentNr()>                                                      
+                    <div id="EffortField">
+                     <input id="EffortExt" name="Effort" type="radio" value="external">
+					<label for="EffortExt" class="Button" title="External effort">Extern</label>
+                    
+					<input id="EffortInt" name="Effort" type="radio" value="internal" checked="checked">
+					<label for="EffortInt" class="Button" title="Internal effort">Intern</label>
+                    </div>
+				</fieldset>
+        
+               <div> <p id="demo" > </p> </div>
+
+			</form>
+		</div>
+
+	</body>
+
+</html>
