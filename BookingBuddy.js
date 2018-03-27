@@ -1,71 +1,80 @@
 //Declare and define the diffrent SAP_Segment
 var gcySAP_Segment = [
-    {key : "Motion"},
+    {key : "BZ_Dach"},
+    {key : "BZ_China"},
+    {key : "BZ_World"},
+    {key : "DZ_BCS"},
 	{key : "China"},
-	{key : "Turkey"},
+	{key : "Türkei"},
 	{key : "Taiwan"},
     {key : "USA"},
 	{key : "Korea"},
+	{key : "Japan"},
 	{key : "DACH"},
-    {key : "Italy"},
-	{key : "Spain"},
-    {key : "Rest of the World"}
+    {key : "Italien"},
+	{key : "Spanien"},
+    {key : "ROW"}
 ];
 
 var gcySAPClient_Matrix = [
-    {key : "Motion",    value : 7993221, description : "Main cost center"},
-    {key : "Motion",    value : 5501906, description : "Solution Management"},
-    {key : "Motion",    value : 5501907, description : "Solution Services"},
+    {key : "BZ_Dach",    value : 7993612, description : "Kostenstelle"},
+    {key : "BZ_Dach",    value : 5101001, description : "Vertrieb"},
+	
+    {key : "BZ_China",    value : 7993613, description : "Kostenstelle"},
+    {key : "BZ_China",    value : 5101002, description : "Vertrieb"},
+	
+    {key : "BZ_World",    value : 7993614, description : "Kostenstelle"},
+    {key : "BZ_World",    value : 5101003, description : "Vertrieb"},
+	
+    {key : "DZ_BCS",    value : 7993631, description : "Kostenstelle"},
     
-    {key : "China",     value : 101894720030, description : "All China clients"},
+    {key : "China",     value : 101894720030, description : "alle China kunden"},
     
-    {key : "Turkey",    value : 101894730030, description : "All Turkey clients"},
-    {key : "Turkey",    value : 101895130010, description : "TTM"},
+    {key : "Türkei",    value : 101894730030, description : "alle Türkei kunden"},
     
-    {key : "Taiwan",    value : 101894740030, description : "All Taiwan clients"},
+    {key : "Taiwan",    value : 101894740030, description : "alle Taiwan kunden"},
     
-    {key : "USA",       value : 101894750030, description : "All USA clients"},
+    {key : "USA",       value : 101894750050, description : "alle USA kunden"},
     
-    {key : "Korea",     value : 101894760030, description : "All Korea clients"},
+    {key : "Korea",     value : 101894760030, description : "restl. Korea kunden"},
     {key : "Korea",     value : 101894980010, description : "Ropick"},
+	
+    {key : "Japan",     value : 102159170010, description : "restl. japan kunden"},
+    {key : "Japan",     value : 102372070020, description : "Nachi"},
+    {key : "Japan",     value : 102142880010, description : "Toshiba"},
     
-    {key : "DACH",      value : 101894970010, description : "Pesterpac"},
-    {key : "DACH",      value : 101895000010, description : "Güdel"},
-    {key : "DACH",      value : 101895010010, description : "Novitas"},
-    {key : "DACH",      value : 101895040010, description : "Schunk"},
-    {key : "DACH",      value : 101895050010, description : "Gomtech"},
-    {key : "DACH",      value : 101895060010, description : "Sixjet (Mabi)"},
+    {key : "DACH",      value : 101895010030, description : "Novitas"},
     {key : "DACH",      value : 101895090010, description : "IGM"},
-    {key : "DACH",      value : 101895110010, description : "Manz"},
-    {key : "DACH",      value : 101895120010, description : "LTI Drives"},
+    {key : "DACH",      value : 101895120010, description : "Lti Drives GmbH"},
+    {key : "DACH",      value : 101941030010, description : "Hiwin GmbH"},
     
-    {key : "Italy",      value : 101895070010, description : "Felmec"},
-    {key : "Italy",      value : 101895080010, description : "Comau"},
-    {key : "Italy",      value : 101895030010, description : "SACMI (Sytrama"},
-    {key : "Italy",      value : 101894990010, description : "Maspack SRL"},
-    {key : "Italy",      value : 101895140010, description : "CMA"},
-    {key : "Italy",      value : 101895150010, description : "GEM SRL"},
-    {key : "Italy",      value : 101895160010, description : "C.I.A. SRL"},
-    {key : "Italy",      value : 101895170010, description : "Motor Power Company"},
+    {key : "Italien",      value : 102074420010, description : "CT Pack Srl"},
+    {key : "Italien",      value : 101894990010, description : "Maspack SRL"},
+    {key : "Italien",      value : 101895140010, description : "CMA"},
+    {key : "Italien",      value : 101895150010, description : "GEM SRL"},
+    {key : "Italien",      value : 101942610010, description : "Tecno Pack"},
+    {key : "Italien",      value : 102297430010, description : "Bergami Packaging"},
     
-    {key : "Spain",      value : 101895020010, description : "All Spain clients"},
+    {key : "Spanien",      value : 101895020010, description : "Alle Spanien kunden"},
     
-    {key : "Rest of the World", value : 101894960010, description : "Electro AB (BluePrint)"},
-    {key : "Rest of the World", value : 101895100010, description : "Natreb Brazil"}
+    {key : "ROW", value : 101894960010, description : "Electro AB (BluePrint)"},
+    {key : "ROW", value : 101895100010, description : "Natreb Brazil"}
 ];
 
 var gcyProcess = [
-    {key : "MT0", description : "Seminar, Messen, Schulung"},
+    {key : "MT0", description : "Seminar, Messen, Schulung besuchen"},
     {key : "147", description : "Dokumentieren"},
+    {key : "105", description : "Büroarbeit"},
     {key : "150", description : "Besprechung"},
-    {key : "151", description : "Anlernen, Schulung"},
+    {key : "151", description : "Anlernen, Schulung halten"},
     {key : "545", description : "Software Design"},
     {key : "565", description : "SW Implementierung, Nachbereitung IBN"},
     {key : "582", description : "SW Auslieferungstest"},
     {key : "590", description : "VB Inbetriebnahme"},
     {key : "592", description : "Inbetriebnahme"},
     {key : "605", description : "techn. Kundenbetreuung"},
-    {key : "615", description : "Vorbereitung Messe"}
+    {key : "615", description : "Vorbereitung Messe"},
+    {key : "PRW", description : "Produkt wartung"}
 ];
 
 var buchungsMatrix = [
@@ -88,11 +97,11 @@ gSelect_Process = document.createElement('select');
 //Segment
 gSelect_SAPSegment.name = 'ddl_SAP_Segment';
 gSelect_SAPSegment.id = 'SAP_Segment_Select_ID';
-gSelect_SAPSegment.title = 'Select Segment or Country';
+gSelect_SAPSegment.title = 'Select Kst';
 //Client
 gSelect_SAPClient.name = 'ddl_SAP_Client';
 gSelect_SAPClient.id = 'SAP_Client_Select_ID';
-gSelect_SAPClient.title = 'Select the Client';
+gSelect_SAPClient.title = 'Select sub. cat.';
 gSelect_SAPClient.disabled = true; //Disable it at the beginning
 //Process
 gSelect_Process.name = "ddl_Process";
@@ -125,7 +134,8 @@ gSelect_SAPSegment.onchange = function () {
         giCostCenter = -1;
         document.getElementById('demo').innerHTML = "invalid: " + giCostCenter;
         //Disable the Effort radio button if Motion Segment selected
-        if (gSelect_SAPSegment.value === 'Motion') {
+        if (gSelect_SAPSegment.value === 'BZ_Dach' || gSelect_SAPSegment.value === 'BZ_China' || 
+			gSelect_SAPSegment.value === 'BZ_World' || gSelect_SAPSegment.value === 'DZ_BCS' ) {
             document.getElementById('EffortInt').disabled = true;
             document.getElementById('EffortExt').disabled = true;
             document.getElementById('demo').innerHTML = "disabled: " + giCostCenter;
@@ -153,7 +163,7 @@ gSelect_SAPSegment.onblur = function() {
         gHTMLoption = document.createElement('option');
         gHTMLoption.value = 0;
         gHTMLoption.selected = true;
-        gHTMLoption.text = 'Select Segment';
+        gHTMLoption.text = 'Select Kts.';
         gSelect_SAPSegment.appendChild(gHTMLoption);
         firstFocus = false;
         
@@ -165,7 +175,7 @@ gSelect_SAPSegment.onblur = function() {
         gHTMLoption = document.createElement('option');
         gHTMLoption.value = 0;
         gHTMLoption.selected = true;
-        gHTMLoption.text = 'Select Segment first';
+        gHTMLoption.text = 'Select Kts. first';
         gSelect_SAPClient.appendChild(gHTMLoption);
         gSelect_SAPClient.disabled = true;
         //reset the cost center number
@@ -189,7 +199,7 @@ for (i = 0; i < gcySAP_Segment.length; i++) {
 gHTMLoption = document.createElement('option');
 gHTMLoption.value = 0;
 gHTMLoption.selected = true;
-gHTMLoption.text = 'Select Segment';
+gHTMLoption.text = 'Select Kts.';
 gSelect_SAPSegment.appendChild(gHTMLoption);
 
 
@@ -197,7 +207,7 @@ gSelect_SAPSegment.appendChild(gHTMLoption);
 //when client list is selected (focused)
 gSelect_SAPClient.onfocus = function () {
     if (!oncefocusedClient) {
-        //Delete the last option ("Select Clients")
+        //Delete the last option ("Select kunden")
         gSelect_SAPClient.remove(gSelect_SAPClient.length - 1);
         oncefocusedClient = true;
     }
@@ -214,7 +224,7 @@ gSelect_SAPClient.onchange = function () {
 gHTMLoption = document.createElement('option');
 gHTMLoption.value = 0;
 gHTMLoption.selected = true;
-gHTMLoption.text = 'Select Segment first';
+gHTMLoption.text = 'Select Kts. first';
 gSelect_SAPClient.appendChild(gHTMLoption);
 
 //Fill the Dropdownlist - its a function because it depends on the selected option of gSelect_SAPSegment
@@ -260,7 +270,8 @@ for (i = 0; i < gcyProcess.length; i++) {
 //++++++++++++++++++++++ Functions for Radio Button Effort ++++++++++++++++++++
 function updateAssignmentNr() {
     if (gSelect_SAPClient.selectedIndex != -1) {
-        if (gSelect_SAPSegment.value === 'Motion') {
+        if (gSelect_SAPSegment.value === 'BZ_Dach' || gSelect_SAPSegment.value === 'BZ_China' || 
+			gSelect_SAPSegment.value === 'BZ_World' || gSelect_SAPSegment.value === 'DZ_BCS' ) {
             //Does not have internal or external effort
             giCostCenter = parseInt(gSelect_SAPClient.value);
             document.getElementById('demo').innerHTML = giCostCenter;
@@ -282,7 +293,7 @@ function updateAssignmentNr() {
 
 // Add the <div> to the DOM, then add the <select> to the <div>
 function AssignHTMLObjects() {
-    //Append the SAP_Depitor Dropdownlist and all its function to the HTML
+    //Append the SAP_Depitor Dropdownlist and Alle its function to the HTML
     document.getElementById('SAP_Segment_ID').appendChild(gSelect_SAPSegment);
     document.getElementById('SAP_Client_ID').appendChild(gSelect_SAPClient);
     document.getElementById('Process_ID').appendChild(gSelect_Process);

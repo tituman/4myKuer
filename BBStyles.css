@@ -2,7 +2,7 @@
 
 body {
    width: auto;
-   max-width: 320px;
+   max-width: 250px;
    margin: 0 auto;
    padding: 0;
    color: #333;
@@ -20,6 +20,7 @@ h1 {
    margin: 0;
    margin-bottom: 10px;
    font-size: 1.25em;
+    text-align: center;
 }
 
 noscript {
@@ -36,21 +37,9 @@ noscript {
 
 #main {
    margin-top: 0px;
-   padding: 25px;
+   padding: 15px;
    background-color: #fff;
    border-radius: 4px;
-}
-
-
-/* Canvas */
-
-#Canvas {
-   display: none;
-   position: absolute;
-   top: 11px;
-   right: 10px;
-   width: 16px;
-   height: 16px;
 }
 
 
@@ -74,14 +63,17 @@ label {
     font-size: 14px;
     height: auto;
     width: auto;
+    line-height: 30px;
+    text-align:center;
+vertical-align:middle; /*
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
 }
 .middle {
-    vertical-align: top;
+    vertical-align: middle;
     
 }
 /* Dropdown Lists*/
@@ -90,11 +82,14 @@ select {
     border: solid 2px #00A300;
     border-radius: 4px;    
     box-sizing: border-box; 
-    width: 60%;
-    float:right;
+    vertical-align: middle;
+    width: 50%;
+    float:right; 
+    display:inline-block;
 }
 #Process_ID, #SAP_Client_ID, #SAP_Segment_ID, #EffortField{
     height: 30px;
+    vertical-align: middle;
     margin: 0;
 }
 
@@ -115,6 +110,7 @@ input[type="radio"] + label {
    height: 16px;
    margin: 0;
    padding: 6px 0;
+    line-height: normal;
    color: #999;
    background-color: #ccc;
    text-align: center;
@@ -140,13 +136,7 @@ input[type="radio"]:checked + label {
 #EffortField label:last-of-type {
    border-radius: 4px 0 0 4px;
 }
-stickyMenu{
-    position: fixed;
-    z-index: 700;
-    border: none;
-    right: 0px;
-    
-}
+
 
 
 
@@ -175,19 +165,16 @@ stickyMenu{
 /*
 @media only screen and (max-width: 800px) {
 */
-   .body {
-      background-color: #fff;
-   }
-
-   .main {
-     margin: 0;
-     padding: 15px;
-     border-radius: 0;
-   }
-
-   .Output {
-     height: auto;
-   }
-/*
+.body {
+  background-color: #fff;
 }
-*/
+
+.main {
+ margin: 0;
+ padding: 5px;
+ border-radius: 0;
+}
+
+.Output {
+ height: auto;
+}
